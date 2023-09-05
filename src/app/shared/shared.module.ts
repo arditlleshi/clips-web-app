@@ -5,8 +5,8 @@ import { TabsContainerComponent } from './tabs-container/tabs-container.componen
 import { TabComponent } from './tab/tab.component';
 import { InputComponent } from './input/input.component';
 import { ReactiveFormsModule } from "@angular/forms";
-// import { ModalService } from "../services/modal.service";
 
+// import { ModalService } from "../services/modal.service";
 
 
 @NgModule({
@@ -18,7 +18,7 @@ import { ReactiveFormsModule } from "@angular/forms";
   ],
   imports: [
     CommonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   exports: [
     ModalComponent,
@@ -28,4 +28,5 @@ import { ReactiveFormsModule } from "@angular/forms";
   ],
   // providers: [ModalService]
 })
-export class SharedModule { }
+export class SharedModule {
+}
