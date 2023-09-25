@@ -5,6 +5,9 @@ import { TabsContainerComponent } from './tabs-container/tabs-container.componen
 import { TabComponent } from './tab/tab.component';
 import { InputComponent } from './input/input.component';
 import { ReactiveFormsModule } from "@angular/forms";
+import { NgxMaskDirective } from "ngx-mask";
+import { AlertComponent } from './alert/alert.component';
+import { EventBlockerDirective } from './directives/event-blocker.directive';
 
 // import { ModalService } from "../services/modal.service";
 
@@ -14,17 +17,22 @@ import { ReactiveFormsModule } from "@angular/forms";
     ModalComponent,
     TabsContainerComponent,
     TabComponent,
-    InputComponent
+    InputComponent,
+    AlertComponent,
+    EventBlockerDirective
   ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
+    NgxMaskDirective,
   ],
   exports: [
     ModalComponent,
     TabsContainerComponent,
     TabComponent,
-    InputComponent
+    InputComponent,
+    AlertComponent,
+    EventBlockerDirective
   ],
   // providers: [ModalService]
 })
